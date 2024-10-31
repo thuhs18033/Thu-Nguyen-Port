@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thu Nguyen - Art Porfolio</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e4;
+        }
+        h1, h2, h3 {
+            color: #FF9494;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #FF9494;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 2px solid #FF9494;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #FF9494;
+            color: white;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .project-link {
+            color: #FF9494;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #FF9494;
+            border-radius: 5px;
+            background-color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        .dropdown:hover {
+            background-color: #FF9494;
+            color: white;
+        }
+        .dropdown-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #FF9494;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #ffffff;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+<style>
+    body {
+        margin: 20px;
+        padding: 20px;
+        height: 100vh; /* Ensures the footer is at the bottom of the viewport */
+    }
+
+    .footer {
+        position: fixed; /* Fixes the position */
+        bottom: 30px; /* Distance from the bottom */
+        right: 30px; /* Distance from the right */
+        color: #FF9494; /* Pink color */
+        font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+        font-size: 14px; /* Adjust font size as needed */
+        white-space: nowrap; /* Prevent line breaks */
+        transform: rotate(90deg); /* Rotate text 90 degrees */
+        transform-origin: right bottom; /* Set the rotation origin to the bottom right */
+    }
+</style>
+
+    <script>
+        function toggleDropdown(event) {
+            const content = event.currentTarget.nextElementSibling;
+            content.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY ART PORTFOLIO!</h1>
+        <p>"Embracing our differences shapes our identities, and our unique identities can transform the world."</p>
+
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#artist-statement">Artist Statement</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+	</div class="container">
+
+        <div class="container" id="about">
+            <h2>About Me</h2>
+            <p><strong>Nationality:</strong> Vietnamese.</p>
+            <p><strong>Institution:</strong> Grade 12 - Ngoi Sao Private High School.</p>
+            <p><strong>Media Experience:</strong> I have worked for 4 years in the field of media and communication, flexible in design, content writing, and video production.</p>
+        </div class="container">
+
+
+        <div class="container" id="artist-statement">
+            <h2>Background & Artist Statement</h2>
+            <p>Coming from a <strong><em>non-club Secondary school</em></strong>, my exposure to extracurricular activities was supposed to be limited. But since grade 6, owing to the YouTube videos of <a class="project-link" href="https://www.youtube.com/@withvung" target="_blank">Vừng</a>, <a class="project-link" href="https://www.youtube.com/@cloudoris" target="_blank">Cloudoris</a>, <a class="project-link" href="https://www.youtube.com/@meichan" target="_blank">Meichan</a>, etc, I had gradually approached and nurtured a passion for social projects, competition and studying abroad. That passion led me to the following journey of fighting against prejudice and changed the place where I grew up.</p>
+	    <p>In other words, those influencers had <strong><em>changed my life and my community</strong></em>. Therefore, I want to give back the same value to my community through working in this field, especially in the <strong><em>educational branch</strong></em>, which is not just a pursuit that can satisfy my learning aspiration in communication and production but is what has shaped me.</p>
+        </div class="container">
+
+
+        <div class="container" id="projects">
+            <h2>My Projects</h2>
+		<p> <font color= #FF9494><em> Click to see the products and description </em></font> </p>
+            
+            <div class="dropdown" onclick="toggleDropdown(event)">1ST PRIZE - Film Category - Ngoi Sao English Day</div>
+            <div class="dropdown-content">
+                <p><strong>THE ABSOLUTE TRUE DIARY OF A PART-TIME INDIAN</strong> (<a class="project-link" href="https://drive.google.com/file/d/1Fo-2-PSD0Q_rue0J3NtvYBbUsScghZ5v/view?usp=sharing" target="_blank">View Film</a>)</p>
+    		<p><strong>Category:</strong> Short film</p>
+                <p><strong>Role:</strong> Co-director</p>
+                <p><strong>Description:</strong> The short film is about the journey of Junior – a “part-time” Indian in the US– adapting to a new school in the metropolis. In this journey, he faced severe bullying because of his background and appearance, but he kept himself strong and kind, which gradually changed the people around him. This short film condemns the issue of racism in school and spreads the message of embracing diversity for a better world.</p>
+                <p><em>*P/S: The film is transformed from the original same-name novel by Sherman Alexie.</em></p>
+            </div>
+
+            <div class="dropdown" onclick="toggleDropdown(event)">TOP 5 Rang dong x Swin-media Competition</div>
+            <div class="dropdown-content">
+                <p><strong>LIVE GREEN WITH RALLISMART</strong> (<a class="project-link" href="https://drive.google.com/file/d/1hc3Di3iP3UCkySBwP1BXbIMKmRoYilNl/view?usp=sharing" target="_blank">View Advertisement</a>)</p>
+        	<p><strong>Category:</strong> Advertisement</p>
+                <p><strong>Role:</strong> Director & Editor</p>
+                <p><strong>Description:</strong> The advertisement seeks to convey Rang Dong's core message as a leading technology brand in Vietnam: "Green life – Healthy life – Modern life." In the advertisement, we used impactful statistics to highlight pressing environmental issues, leading to an emphasis on its smart home product, Rallismart, and its positive impact.</p>
+            </div>
+
+            <div class="dropdown" onclick="toggleDropdown(event)">PHIEU TUDORS – A platform showcasing our journey at Ngoi Sao Private High School</div>
+            <div class="dropdown-content">
+                <p><strong>PHIEU TUDORS</strong> (<a class="project-link" href="https://www.tiktok.com/@phieu.tudor" target="_blank">View TikTok</a>; <a class="project-link" href="https://www.instagram.com/phieutudor/" target="_blank">View Instagram</a>)</p>
+                <p><strong>Category:</strong> Instagram channel</p>
+                <p><strong>Role:</strong> Co-founder</p>
+                <p><strong>Description:</strong> Founded to preserve our high school memories, Phieu Tudors has profoundly impacted both us, the founders, and our community. In Vietnam, there is a stigma around Private High School students, and we have often faced discrimination because of it. To shift this perception, we created this channel to share our positive experiences, showing that attending a Private School is not something to be ashamed of, but rather a prejudice to be challenged.</p>
+            </div>
+
+            <div class="dropdown" onclick="toggleDropdown(event)">DAM - Social project provides bystanders with solutions for school bullying intervention</div>
+            <div class="dropdown-content">
+                <p><strong>DAM Project</strong> (<a class="project-link" href="https://drive.google.com/drive/folders/14TTcdPr5PginATY8khnkBUU_q2yiwVDU" target="_blank">View Branding Guideline</a>)</p>
+                <p><strong>Category:</strong> Design</p>
+                <p><strong>Role:</strong> Co-founder, Branding Guidelines Designer</p>
+                <p><strong>Description:</strong> DAM was founded to reduce the bystander effect in school bullying through the STAC Program, recognizing a key insight: students know that bullying must be stopped and victims need support. However, they fear being dragged into conflicts, worry about lacking protection if they intervene, or doubt the effectiveness of their actions. Uncertain about safe and impactful ways to step in, they hesitate. Our program provides clear, effective intervention guidance, empowering students to act with courage and confidence in a safe manner.</p>
+            </div>
+
+            <div class="dropdown" onclick="toggleDropdown(event)">EDUHOLIC PREP - A start-up that offers college admission counseling services for high school students</div>
+            <div class="dropdown-content">
+                <p><strong>EDUHOLIC PREP</strong> (<a class="project-link" href="https://www.tiktok.com/@eduholic.prep" target="_blank">View TikTok Channel</a>)</p>
+                <p><strong>Category:</strong> TikTok Channel</p>
+                <p><strong>Role:</strong> Channel Creator</p>
+                <p><strong>Description:</strong> I launched and grew a TikTok channel from 0 to 6 million views, highlighting students' diverse backgrounds and journeys and challenging prevalent biases in Vietnam against students attending international
+	</div>
+	    <div class="dropdown" onclick="toggleDropdown(event)">Photography Collection</div>
+            <div class="dropdown-content">
+                <p><strong>MAHDIARIES_</strong> (<a class="project-link" href="https://www.instagram.com/mahdiaries_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">View Collection</a>)</p>
+                <p><strong>Category:</strong> Photography</p>
+                <p><strong>Role:</strong> Photographer</p>
+                <p><strong>Description:</strong> Initially, I wasn’t a confident photographer, but my school’s no-phone rule inspired me to preserve our memories. I set up an Instagram account to share moments captured through my camera. This experience helped me refine my skills and become one of the few to document our time there.</p>
+            </div>
+	</div class="container">
+	
+
+        <div class="container" id="contact">
+            <h2>Contact</h2>
+            <p>Mail: <a class="project-link" href="mailto:nt555121@gmail.com">nt555121@gmail.com</a></p>
+            <p>Phone: <a class="project-link" href="tel:+84966354050">+84 966354050</a></p>
+        </div class="container">
+</div>
+<div class="footer">
+        Website by Thu Nguyen
+    </div>
+</body>
+</html>
